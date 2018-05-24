@@ -14,7 +14,7 @@ export class AppComponent {
 
             if (e instanceof NavigationEnd) {
                 console.log("[ROUTER]: " + e.toString());
-               console.log(location.toString());
+                console.log(location.toString());
             }
         });
     }

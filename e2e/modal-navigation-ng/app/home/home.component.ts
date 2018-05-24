@@ -17,13 +17,11 @@ export class HomeComponent {
 
     public onModalFrame(args: EventData) {
         const options: ModalDialogOptions = {
-            // context: null,
-            fullscreen: true,
             viewContainerRef: this.vcRef
         };
 
         this.modal.showModal(ModalRouterComponent, options).then((res: string) => {
-             console.log("MODAL SHOWN");
+            console.log("modal page with frame closed");
         });
     }
 }

@@ -4,10 +4,10 @@ import { NSLocationStrategy } from "nativescript-angular/router/ns-location-stra
 import { RouterExtensions } from "nativescript-angular/router";
 
 @Component({
-    selector: "ns-router",
-    templateUrl: "app.component.html",
+    moduleId: module.id,
+    selector: "modal-router",
+    templateUrl: "./modal-router.component.html",
 })
-
 export class ModalRouterComponent {
     constructor(router: Router, location: NSLocationStrategy, private routerExtension: RouterExtensions, private activeRoute: ActivatedRoute) {
         router.events.subscribe(e => {
