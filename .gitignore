@@ -1,6 +1,7 @@
+hooks
 node_modules
 platforms
-hooks
+reports
 tags
 **/*.js.map
 **/*.metadata.json
@@ -21,17 +22,17 @@ tags
 npm-debug.log
 nativescript-angular*.tgz
 package-lock.json
+test-results.xml
 
 # Apps' JS files
+e2e/**/*.js
+ng-sample/app/**/*.js
 tests/app/**/*.js
 tests/test-output.txt
-ng-sample/app/**/*.js
 
 # Webpack configuration files
 webpack.config.js
-vendor.ts
-vendor-platform.android.ts
-vendor-platform.ios.ts
+tsconfig.esm.json
 
 # IDEs and editors
 /.idea
